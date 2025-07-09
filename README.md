@@ -1,4 +1,4 @@
-# SoftTeco Quiz App
+# SoftTeco Quiz App 
 
 ## A web application, where you can check your knowledge in quiz format.
 
