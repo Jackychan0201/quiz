@@ -54,7 +54,7 @@ for (let i=0; i<optionButtons.length; i++){
             isActive = !isActive;
             submitButton.classList.toggle('submit-button-disabled');
             submitButton.classList.toggle('submit-button-enabled');
-            submitButton.disabled = false;
+            submitButton.disabled = !submitButton.disabled;
         }
     });
 }
