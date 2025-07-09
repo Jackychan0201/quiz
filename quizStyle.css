@@ -344,6 +344,8 @@
     align-self: center;
     justify-self: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .option-button{
@@ -400,6 +402,8 @@
     padding-bottom: 12px;
     padding-right: 40px;
     padding-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .submit-button-disabled{
