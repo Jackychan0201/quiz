@@ -33,10 +33,7 @@ cd quiz
 
 ## Deployed application
 The application is already deployed. You can access it via:
-https://jackychan0201.github.io/CRUD/
->[!WARNING]
->
->Not this link. I will alter it.
+[https://jackychan0201.github.io/quiz/start.html]
 
 ## Found a bug?
 If you found an issue while testing the app or you would like to submit an improvement for the project, I encourage you to contact me via my email: y.budzko@softteco.eu
