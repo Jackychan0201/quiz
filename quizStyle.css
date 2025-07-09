@@ -1,4 +1,170 @@
-/*320, 430, 710, 992, 1441*/
+.line {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    background-color: #c9c9c9;
+}
+
+.circles-container{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.currentCircle {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #26B6E3;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #26B6E380;
+    color: #FFF;
+}
+
+
+.nextCircle {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #26B6E3;
+}
+
+
+.previousCircle {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #C9C9C9;
+}
+
+
+.question-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #26B6E3;
+}
+.question-container p{
+    color: #FFF;
+    text-align: left;
+}
+
+.number{
+    font-family: 'Inter';
+    font-size: 16px;
+    text-align: center;
+}
+
+.options-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option-button{
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.option-button:not(.no-hover):hover{
+    border: 1px solid #26B6E3;
+    background-color: #26B6E333;
+    color: #26B6E3;
+}
+
+.option-button-default{
+    border: 1px solid #26B6E3;
+    background-color: #FFF;
+    color: #26B6E3;
+}
+
+.option-button-incorrect{
+    border: 1px solid #D90000;
+    background-color: #D9000033;
+    color: #D90000;
+}
+
+.option-button-correct{
+    border: 1px solid #00B512;
+    background-color: #00B51233;
+    color: #00B512;
+}
+
+.option-button-clicked{
+    border: 1px solid #26B6E3;
+    background-color: #26B6E3;
+    color: #FFF;
+}
+
+.submit-button{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: start;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    border: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 40px;
+    padding-bottom: 12px;
+    padding-right: 40px;
+    padding-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-button-disabled{
+    background-color: #C9C9C9;
+    color: #FFF;
+}
+
+.submit-button-enabled{
+    background-color: #26B6E3;
+    color: #FFF;
+}
+
+.submit-button-enabled:hover{
+    box-shadow: 0px 0px 10px #26B6E3;
+}
+
+html{
+  height: 100%;
+}
+body {
+  background-color: #FFF;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 @media screen and (min-width: 320px){
     .circles-container{
         margin-top: 28px;
@@ -264,171 +430,4 @@
         font-size: 32px;
         margin-top: 60px;
     }
-}
-
-.line {
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    align-self: center;
-    width: 100%;
-    background-color: #c9c9c9;
-}
-
-.circles-container{
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    background-color: #FFF;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.currentCircle {
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #26B6E3;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px #26B6E380;
-    color: #FFF;
-}
-
-
-.nextCircle {
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFF;
-    border-radius: 50%;
-    color: #26B6E3;
-}
-
-
-.previousCircle {
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFF;
-    border-radius: 50%;
-    color: #C9C9C9;
-}
-
-
-.question-container {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #26B6E3;
-}
-.question-container p{
-    color: #FFF;
-    text-align: left;
-}
-
-.number{
-    font-family: 'Inter';
-    font-size: 16px;
-    text-align: center;
-}
-
-.options-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    justify-self: center;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.option-button{
-    border-radius: 10px;
-    text-align: left;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-}
-
-.option-button:not(.no-hover):hover{
-    border: 1px solid #26B6E3;
-    background-color: #26B6E333;
-    color: #26B6E3;
-}
-
-.option-button-default{
-    border: 1px solid #26B6E3;
-    background-color: #FFF;
-    color: #26B6E3;
-}
-
-.option-button-incorrect{
-    border: 1px solid #D90000;
-    background-color: #D9000033;
-    color: #D90000;
-}
-
-.option-button-correct{
-    border: 1px solid #00B512;
-    background-color: #00B51233;
-    color: #00B512;
-}
-
-.option-button-clicked{
-    border: 1px solid #26B6E3;
-    background-color: #26B6E3;
-    color: #FFF;
-}
-
-.submit-button{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    align-items: start;
-    justify-content: center;
-    border-radius: 10px;
-    text-align: center;
-    border: 0px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 40px;
-    padding-bottom: 12px;
-    padding-right: 40px;
-    padding-top: 12px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.submit-button-disabled{
-    background-color: #C9C9C9;
-    color: #FFF;
-}
-
-.submit-button-enabled{
-    background-color: #26B6E3;
-    color: #FFF;
-}
-
-.submit-button-enabled:hover{
-    box-shadow: 0px 0px 10px #26B6E3;
-}
-
-html{
-  height: 100%;
-}
-body {
-  background-color: #FFF;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }

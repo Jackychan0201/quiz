@@ -1,3 +1,55 @@
+.circle{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #26B6E3;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px #26B6E3;
+    margin-top: 60px;
+}
+.score {
+    font-family: 'Poppins';
+    color: #26B6E3;
+    text-align: center;
+}
+
+p {
+    margin: 0px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+}
+html{
+  height: 100%;
+}
+body {
+  background-color: #FFF;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 320px){
   .circle {
     height: 270px;
@@ -72,57 +124,3 @@
     font-weight: 500;
   }
 }
-
-
-.circle{
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #26B6E3;
-    border-radius: 50%;
-    box-shadow: 0px 0px 40px #26B6E3;
-    margin-top: 60px;
-}
-.score {
-    font-family: 'Poppins';
-    color: #26B6E3;
-    text-align: center;
-}
-
-p {
-    margin: 0px;
-    font-family: 'Poppins';
-    font-weight: 400;
-    color: #FFFFFF;
-    text-align: center;
-}
-html{
-  height: 100%;
-}
-body {
-  background-color: #FFF;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-div {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-self: center;
-  justify-self: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFF;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
