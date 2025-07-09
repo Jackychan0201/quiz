@@ -88,7 +88,7 @@ function validateAnswer(){
     chosenOptionsCount = 0;
     if (currentQuestionIndex === 11){
         submitButton.addEventListener('click', () =>
-        window.location.href = 'finish.html');
+        window.location.href = '../pages/finish.html');
         sessionStorage.setItem("score", score);
     }
     else{
