@@ -1,4 +1,14 @@
-@media screen and (min-width: 400px){
+@media screen and (min-width: 320px){
+  .circle {
+    height: 270px;
+    width: 270px;
+  }
+  p {
+    font-size: 38px;
+  }   
+}
+
+@media screen and (min-width: 430px){
   .circle {
     height: 340px;
     width: 340px;
@@ -6,6 +16,17 @@
 
   p {
     font-size: 48px;
+  }   
+}
+
+@media screen and (min-width: 710px){
+  .circle {
+    height: 540px;
+    width: 540px;
+  }
+
+  p {
+    font-size: 76px;
   }   
 }
 
@@ -17,6 +38,17 @@
 
   p {
     font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 1441px){
+  .circle {
+    height: 659px;
+    width: 659px;
+  }
+
+  p {
+    font-size: 110px;
   }
 }
 

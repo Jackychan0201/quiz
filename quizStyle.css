@@ -1,4 +1,63 @@
-@media screen and (min-width: 400px){
+/*320, 430, 710, 992, 1441*/
+@media screen and (min-width: 320px){
+    .circles-container{
+        margin-top: 28px;
+    }
+    .question-container{
+        margin-top: 28px;
+        height: 170px;
+    }
+    .question-container p{
+        font-size: 18px;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .line {
+        height: 0.8px;
+    }
+    .currentCircle {
+        height: 26px;
+        width: 26px;
+    }
+
+    .nextCircle{
+        height: 24px;
+        width: 24px;
+        border: 0.8px solid #26B6E3;
+    }
+
+    .previousCircle{
+        height: 24px;
+        width: 24px;
+        border: 0.8px solid #C9C9C9;
+    }
+
+    .options-container{
+        margin-top: 30px;
+        max-width: 280px;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .option-button{
+        font-size: 16px;
+        padding-left: 17px;
+        padding-top: 14px;
+        padding-right: 17px;
+        padding-bottom: 14px;
+        min-width: 280px;
+        min-height: 44px;
+        max-height: 56px;
+    }
+
+    .submit-button{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 430px){
     .circles-container{
         margin-top: 30px;
     }
@@ -30,6 +89,7 @@
     }
 
     .options-container{
+        margin-top: 60px;
         max-width: 370px;
         gap: 20px;
         flex-direction: column;
@@ -48,6 +108,61 @@
 
     .submit-button{
         font-size: 20px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 710px){
+    .circles-container{
+        margin-top: 30px;
+    }
+    .question-container{
+        margin-top: 30px;
+    }
+    .question-container p{
+        font-size: 24px;
+        max-width: 500px;
+    }
+    .line {
+        height: 1px;
+    }
+    .currentCircle {
+        height: 44px;
+        width: 44px;
+    }
+
+    .nextCircle{
+        height: 40px;
+        width: 40px;
+        border: 2px solid #26B6E3;
+    }
+
+    .previousCircle{
+        height: 40px;
+        width: 40px;
+        border: 2px solid #C9C9C9;
+    }
+
+    .options-container{
+        margin-top: 60px;
+        max-width: 400px;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .option-button{
+        font-size: 26px;
+        padding-left: 19px;
+        padding-top: 15px;
+        padding-right: 19px;
+        padding-bottom: 15px;
+        min-width: 400px;
+        min-height: 100px;
+    }
+
+    .submit-button{
+        font-size: 24px;
+        margin-top: 60px;
     }
 }
 
@@ -56,6 +171,7 @@
         margin-top: 40px;
     }
     .question-container{
+        height: 200px;
         margin-top: 40px;
     }
     .question-container p{
@@ -80,6 +196,7 @@
         border: 2px solid #C9C9C9;
     }
     .options-container{
+        margin-top: 60px;
         max-width: 1180px;
         gap: 40px 60px;
         flex-direction: row;
@@ -95,6 +212,57 @@
     }
     .submit-button{
         font-size: 32px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1441px){
+    .circles-container{
+        margin-top: 40px;
+    }
+    .question-container{
+        height: 250px;
+        margin-top: 40px;
+    }
+    .question-container p{
+        font-size: 38px;
+        max-width: 1180px;
+    }
+    .line {
+        height: 2px;
+    }
+    .currentCircle {
+        height: 60px;
+        width: 60px;
+    }
+    .nextCircle{
+        height: 54px;
+        width: 54px;
+        border: 3px solid #26B6E3;
+    }
+    .previousCircle{
+        height: 54px;
+        width: 54px;
+        border: 3px solid #C9C9C9;
+    }
+    .options-container{
+        margin-top: 60px;
+        max-width: 1300px;
+        gap: 40px 60px;
+        flex-direction: row;
+    }
+    .option-button{
+        font-size: 30px;
+        padding-left: 22px;
+        padding-top: 32px;
+        padding-right: 22px;
+        padding-bottom: 32px;
+        min-height: 110px;
+        min-width: 600px;
+    }
+    .submit-button{
+        font-size: 32px;
+        margin-top: 60px;
     }
 }
 
@@ -154,7 +322,6 @@
 .question-container {
     display: flex;
     width: 100%;
-    height: 200px;
     align-items: center;
     justify-content: center;
     background-color: #26B6E3;
@@ -172,7 +339,6 @@
 
 .options-container{
     display: flex;
-    margin-top: 60px;
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -227,7 +393,6 @@
     border-radius: 10px;
     text-align: center;
     border: 0px;
-    margin-top: 60px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;

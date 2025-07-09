@@ -1,4 +1,18 @@
-@media screen and (min-width: 400px){
+@media screen and (min-width: 320px){
+  .circle {
+    height: 270px;
+    width: 270px;
+  }
+  p {
+    font-size: 38px;
+  }   
+  .score{
+    font-size: 38px;
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 430px){
   .circle {
     height: 340px;
     width: 340px;
@@ -9,6 +23,22 @@
   }   
   .score{
     font-size: 48px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 710px){
+  .circle {
+    height: 367px;
+    width: 367px;
+  }
+
+  p {
+    font-size: 56px;
+  } 
+
+  .score{
+    font-size: 72px;
     font-weight: 300;
   }
 }
@@ -27,6 +57,22 @@
     font-weight: 400;
   }
 }
+
+@media screen and (min-width: 1441px){
+  .circle {
+    height: 440px;
+    width: 440px;
+  }
+
+  p {
+    font-size: 78px;
+  }
+  .score{
+    font-size: 134px;
+    font-weight: 500;
+  }
+}
+
 
 .circle{
     border: none;
