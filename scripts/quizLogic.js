@@ -8,34 +8,34 @@ let currentQuestionIndex = 1;
 let questionsAndOptions = [
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Figma", "Nigma", "Bigma", "Digma"],
-    correct: 0},
+    correct: "7P2"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Bigma", "Nigma", "Figma", "Digma"],
-    correct: 2},
+    correct: "xmN"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Nigma", "Figma", "Bigma", "Digma"],
-    correct: 1},
+    correct: "77B"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Digma", "Nigma", "Bigma", "Figma"],
-    correct: 3},
+    correct: "xPn"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Digma", "Nigma", "Bigma", "Figma"],
-    correct: 3},
+    correct: "xPn"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Nigma", "Figma", "Bigma", "Digma"],
-    correct: 1},
+    correct: "77B"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Bigma", "Nigma", "Figma", "Digma"],
-    correct: 2},
+    correct: "xmN"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Bigma", "Nigma", "Digma", "Figma"],
-    correct: 3},
+    correct: "xPn"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Bigma", "Figma", "Nigma", "Digma"],
-    correct: 1},
+    correct: "77B"},
     {question: "An interface design application that runs in the browser with team-based collaborative design projects", 
     options: ["Figma", "Nigma", "Bigma", "Digma"],
-    correct: 0}
+    correct: "7P2"}
 ];
 
 for (let i=0; i<optionButtons.length; i++){
@@ -67,7 +67,7 @@ function validateAnswer(){
         optionButtons[i].disabled = true;
         if (optionButtons[i].classList[optionButtons[i].classList.length-1] === 'no-hover'){
             optionButtons[i].classList.toggle('option-button-clicked');
-            if (i !== questionsAndOptions[currentQuestionIndex-1].correct) {
+            if (i !== decode(questionsAndOptions[currentQuestionIndex-1].correct)) {
                 optionButtons[i].classList.toggle('option-button-incorrect');
                 score--;
             }
@@ -80,7 +80,7 @@ function validateAnswer(){
             optionButtons[i].classList.toggle('no-hover');
         }
     }
-    optionButtons[questionsAndOptions[currentQuestionIndex-1].correct].classList.toggle('option-button-correct');
+    optionButtons[decode(questionsAndOptions[currentQuestionIndex-1].correct)].classList.toggle('option-button-correct');
 
 
     submitButton.removeEventListener('click', validateAnswer);
@@ -145,6 +145,21 @@ function shuffleQuestions(){
         questionsAndOptions[i] = temp;
         i--;
     }
+}
+
+function decode(str) {
+    const key = "Q7xP9mW3kL2vN8rT4zY6jF5hD1cB0nA";
+    
+    const highChar = str[0];
+    const lowChar = str[2];
+    
+    const high = key.indexOf(highChar);
+    const low = key.indexOf(lowChar);
+
+    const transformed = high * 32 + low;
+    const original = (transformed - 42) / 17;
+
+    return original;
 }
 
 shuffleQuestions();
