@@ -130,7 +130,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 12px, 40px;
+    padding: 12px 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -205,7 +205,7 @@ body {
 
     .option-button{
         font-size: 16px;
-        padding: 14px, 17px;
+        padding: 14px 17px;
         min-width: 280px;
         min-height: 44px;
         max-height: 56px;
@@ -258,7 +258,7 @@ body {
     .option-button{
         min-width: 370px;
         font-size: 20px;
-        padding: 15px, 19px;
+        padding: 15px 19px;
         min-width: 370px;
         min-height: 62px;
     }
@@ -309,7 +309,7 @@ body {
 
     .option-button{
         font-size: 26px;
-        padding: 15px, 19px;
+        padding: 15px 19px;
         min-width: 400px;
         min-height: 100px;
     }
@@ -358,7 +358,7 @@ body {
     .option-button{
         min-width: 560px;
         font-size: 24px;
-        padding: 29px, 19px;
+        padding: 29px 19px;
         min-height: 96px;
     }
     .submit-button{
@@ -404,7 +404,7 @@ body {
     }
     .option-button{
         font-size: 30px;
-        padding: 32px, 22px;
+        padding: 32px 22px;
         min-height: 110px;
         min-width: 600px;
     }
